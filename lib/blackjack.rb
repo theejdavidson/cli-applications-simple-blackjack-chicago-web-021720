@@ -58,13 +58,13 @@ end
 def runner
   welcome
   total = initial_round
-  loop do
   until(total > 21)
+  loop do
     hit?(total)
     display_card_total(total)
-    binding.pry
   end
-end
+  end
+
   end_game
 end
     
